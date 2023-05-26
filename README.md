@@ -82,3 +82,5 @@ function App() {
   }
 }
 ```
+
+![alt](https://github.com/im-sorry/inherit-classname/blob/main/view.gif?raw=true)
