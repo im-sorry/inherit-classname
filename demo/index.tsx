@@ -4,7 +4,9 @@ export default function (props) {
   return (
     <div inherit-class="feedback" {...props}>
       <div inherit-class="head">
-        <div inherit-class="title"></div>
+        <div inherit-class="title red">
+          <div inherit-class="child"></div>
+        </div>
         <div inherit-class="avatar"></div>
       </div>
       <div inherit-class="body">
@@ -18,6 +20,9 @@ export default function (props) {
         </div>
         <div inherit-class="" />
       </div>
+      {[1, 2, 3].map((i) => (
+        <div inherit-class="map"></div>
+      ))}
     </div>
   );
 }

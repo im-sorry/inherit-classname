@@ -16,9 +16,12 @@ function _default(props) {
     "inherit-class": "head",
     className: "feedback-head"
   }, /*#__PURE__*/_react.default.createElement("div", {
-    "inherit-class": "title",
-    className: "feedback-head-title"
-  }), /*#__PURE__*/_react.default.createElement("div", {
+    "inherit-class": "title red",
+    className: "feedback-head-title feedback-head-red"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    "inherit-class": "child",
+    className: "feedback-head-title-child"
+  })), /*#__PURE__*/_react.default.createElement("div", {
     "inherit-class": "avatar",
     className: "feedback-head-avatar"
   })), /*#__PURE__*/_react.default.createElement("div", {
@@ -43,7 +46,9 @@ function _default(props) {
     "inherit-class": "tbody",
     className: "feedback-body-table-tbody"
   })), /*#__PURE__*/_react.default.createElement("div", {
-    "inherit-class": "area3",
-    className: "feedback-body-area3"
+    "inherit-class": ""
+  })), [1, 2, 3].map(i => /*#__PURE__*/_react.default.createElement("div", {
+    "inherit-class": "map",
+    className: "feedback-map"
   })));
 }

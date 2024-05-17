@@ -1,10 +1,11 @@
 {
   "name": "inherit-classname",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A babel plugin that can prefix the class name of a parent element to the class name of a child element",
   "main": "src/index.js",
   "scripts": {
-    "test": "babel ./demo/index.tsx --out-dir demo --extensions .tsx"
+    "test": "babel ./demo/index.tsx --out-dir demo --extensions .tsx",
+    "pub": "npm publish --registry https://registry.npmjs.org/"
   },
   "repository": {
     "type": "git",

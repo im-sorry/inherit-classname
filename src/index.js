@@ -11,6 +11,7 @@ module.exports = function (params) {
         if (!hasInheritClassAttributes) return;
 
         const icl = hasInheritClassAttributes.value.value;
+        if (!icl) return;
         let parentIcl = '';
         let { parentPath } = path;
         while (parentPath !== null) {
@@ -20,8 +21,15 @@ module.exports = function (params) {
           }
           parentPath = parentPath.parentPath;
         }
+        if (parentIcl.includes(' ')) parentIcl = parentIcl.split(' ')[0];
+        let className = `${parentIcl ? `${parentIcl}-` : ''}${icl}`;
 
-        const className = `${parentIcl ? `${parentIcl}-` : ''}${icl}`;
+        if (icl.includes(' ')) {
+          const iclList = icl.split(' ').filter(Boolean);
+          className = iclList
+            .map((i) => `${parentIcl ? `${parentIcl}-` : ''}${i}`)
+            .join(' ');
+        }
         path.inheritClass = className;
 
         const hasClassNameAttributes = path.node.openingElement.attributes.find(

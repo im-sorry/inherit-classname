@@ -29,6 +29,8 @@ function App() {
         </div>
         <div inherit-class="area3" />
       </div>
+      <div inherit-class="cl1 cl2" className="cl3" />
+      {[].map(() => <div inherit-class="map"/>)}
     </div>
   );
 }
@@ -57,6 +59,8 @@ function App() {
         </div>
         <div className="feedback-area3" />
       </div>
+      <div inherit-class="feedback-cl1 feedback-cl2 cl3" />
+      {[].map(() => <div inherit-class="feedback-map"/>)}
     </div>
   );
 }
