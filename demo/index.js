@@ -32,7 +32,7 @@ function _default(props) {
     className: "feedback-body-charts"
   }, /*#__PURE__*/_react.default.createElement("div", {
     "inherit-class": "line",
-    className: "feedback-body-charts-line"
+    className: 'line1'
   }), /*#__PURE__*/_react.default.createElement("div", {
     "inherit-class": "pie",
     className: "feedback-body-charts-pie"

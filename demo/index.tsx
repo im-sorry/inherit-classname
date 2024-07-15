@@ -11,7 +11,7 @@ export default function (props) {
       </div>
       <div inherit-class="body">
         <div inherit-class="charts">
-          <div inherit-class="line"></div>
+          <div inherit-class="line" className={'line1'}></div>
           <div inherit-class="pie"></div>
         </div>
         <div inherit-class="table">

@@ -59,8 +59,8 @@ function App() {
         </div>
         <div className="feedback-area3" />
       </div>
-      <div inherit-class="feedback-cl1 feedback-cl2 cl3" />
-      {[].map(() => <div inherit-class="feedback-map"/>)}
+      <div className="feedback-cl1 feedback-cl2 cl3" />
+      {[].map(() => <div className="feedback-map"/>)}
     </div>
   );
 }
